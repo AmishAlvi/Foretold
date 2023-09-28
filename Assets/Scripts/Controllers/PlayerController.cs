@@ -14,4 +14,9 @@ public class PlayerController : InputController
     {
         return Input.GetButtonDown("Jump");
     }
+
+    public override bool RetrieveJumpHoldInput()
+    {
+        return Input.GetButton("Jump");
+    }
 }
